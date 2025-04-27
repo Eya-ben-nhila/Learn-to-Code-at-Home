@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn HTML</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Body Styling */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f1f2f6, #e3e7f1);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    /* Header */
+    .page-header {
+      background: linear-gradient(135deg, #8e2de2, #4a00e0);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .page-header .header-content {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .page-header h1 {
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .page-header p {
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    /* Main Content */
+    .container {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    /* Video Card */
+    .video-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .video-card:hover {
+      transform: scale(1.05);
+    }
+
+    .video-thumbnail {
+      width: 100%;
+      height: auto;
+      border-bottom: 4px solid #8e2de2;
+    }
+
+    .video-content {
+      padding: 15px;
+    }
+
+    .video-content h3 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .video-content p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 5px 10px;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-radius: 20px;
+      background-color: #8e2de2;
+      color: white;
+    }
+
+    .badge.beginner {
+      background-color: #4caf50;
+    }
+
+    .badge.intermediate {
+      background-color: #ff9800;
+    }
+
+    /* Footer */
+    .page-footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .page-footer p {
+      margin: 0;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="page-header">
+  <div class="header-content">
+    <h1>HTML Learning Hub</h1>
+    <p>Master the basics of building the web</p>
+  </div>
+</header>
+
+<main class="container">
+
+  <div class="video-card">
+    <img src="javascript-inscription-against-laptop-and-code-background-learn-javascript-programming.webp" alt="HTML Basics Thumbnail" class="video-thumbnail">
+    <div class="video-content">
+      <h3><a href="https://youtu.be/W6NZfCO5SIk?si=PI9FPfW6oauIMiCB" target="_blank">HTML Full Course - Build a Website</a></h3>
+      <p>Learn HTML basics in 30 minutes. Perfect for beginners!</p>
+      <span class="badge beginner">Beginner</span>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <img src="javascript-inscription-against-laptop-and-code-background-learn-javascript-programming.webp" alt="Advanced HTML" class="video-thumbnail">
+    <div class="video-content">
+      <h3><a href="https://youtu.be/W6NZfCO5SIk?si=PI9FPfW6oauIMiCB" target="_blank">Intermediate HTML Techniques</a></h3>
+      <p>Take your HTML skills to the next level.</p>
+      <span class="badge intermediate">Intermediate</span>
+    </div>
+  </div>
+
+  <div class="video-card">
+    <img src="javascript-inscription-against-laptop-and-code-background-learn-javascript-programming.webp" alt="Advanced HTML" class="video-thumbnail">
+    <div class="video-content">
+      <h3><a href="https://youtu.be/it1rTvBcfRg?si=Asnpk7wYAPL_6kWm" target="_blank">Advanced HTML Techniques</a></h3>
+      <p>Take your HTML skills to the next level.</p>
+      <span class="badge intermediate">Advanced</span>
+    </div>
+  </div>
+</main>
+
+
+</body>
+</html>
